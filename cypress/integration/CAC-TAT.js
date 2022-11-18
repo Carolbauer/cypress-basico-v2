@@ -43,7 +43,7 @@ describe ('Central de Atendimento ao cliente TAT', function(){
             .should('have.value','')
     })
 
-    it ('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', function(){
+    it('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', function(){
         cy.get('#firstName').type('Caroline')
         cy.get('#lastName').type('Bauer')
         cy.get('#email').type('bauercarol@hotmail.com')
@@ -54,4 +54,8 @@ describe ('Central de Atendimento ao cliente TAT', function(){
         cy.get('.error').should('be.visible')
 
 })
+
+    it.only('Seleciona um produto (Youtube) por seu texto', function(){
+        cy.get('#product').select('youtube').should('have.value','youtube')
+    })
 })
