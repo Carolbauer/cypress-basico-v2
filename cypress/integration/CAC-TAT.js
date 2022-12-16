@@ -130,5 +130,13 @@ describe ('Central de Atendimento ao cliente TAT', function(){
         cy.get('.error').should('be.visible')
 
 })
+    it.only('Seleciona um arquivo da pasta fixtures',function(){
+        cy.get('input[type="file"]')
+          .should('not.have.value')
+          
+          
+         
+        
+    })
 
 })
