@@ -153,6 +153,19 @@ describe ('Central de Atendimento ao cliente TAT', function(){
         cy.get('input[type = "file"]')
             .selectFile('@sampleFile')
     })
+    it('Verifica que a política de privacidade abre em outra aba sem a necessidade', function(){
+        cy.get('#privacy a')
+        .should('have.attr', 'target', '_blank')
+    })
+
+    it.only('Acessa a página de política de privacidade removendo o target e então  ', function(){
+        cy.get('#privacy a')
+        .invoke('removeAttr', 'target' )
+        .click()
+
+        cy.contains('Talking About Testing').should('be.visible')
+        
+    })
           
          
         
