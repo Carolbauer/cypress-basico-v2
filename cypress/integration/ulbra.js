@@ -10,6 +10,7 @@ describe ('Central de Atendimento ao cliente TAT', function(){
     })
     it ('verifica o acesso ao site', function(){
         cy.get('h1').should('be.visible')
-        cy.get(':nth-child(5) > .border-0').select('Autoatendimento').should('have.value','https://www.ulbra.br/autoatendimento')
+        cy.get('.sou-aluno').select('Autoatendimento')
+        .should('have.value','https://www.ulbra.br/autoatendimento')
     })
 })
