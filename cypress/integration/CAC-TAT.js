@@ -163,7 +163,7 @@ describe ('Central de Atendimento ao cliente TAT', function(){
         .invoke('removeAttr', 'target' )
         .click()
 
-        cy.contains('Talking About Testing').should('be.visible')
+        cy.contains('Talkg About Testing').should('be.visible')
         
     })
           
