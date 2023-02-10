@@ -3,7 +3,8 @@
 👋 Seja bem-vindo(a)!
 
 Aqui você poderá visualizar os repositórios com o que aprendi no curso.
-## O que eu aprendi
+
+##Conteúdos do Curso
 
 - Como configurar um projeto Cypress do zero
 - Como visitar páginas locais e remotas
