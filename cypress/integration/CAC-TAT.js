@@ -158,7 +158,7 @@ describe ('Central de Atendimento ao cliente TAT', function(){
         .should('have.attr', 'target', '_blank')
     })
 
-    it.only('Acessa a página de política de privacidade removendo o target e então  ', function(){
+    it('Acessa a página de política de privacidade removendo o target e então  ', function(){
         cy.get('#privacy a')
         .invoke('removeAttr', 'target' )
         .click()
